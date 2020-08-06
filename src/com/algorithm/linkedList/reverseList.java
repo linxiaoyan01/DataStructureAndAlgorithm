@@ -19,9 +19,10 @@ public class reverseList {
 
     }
     //手写循环链表
+    //无头节点，即没有哨兵节点
     static ListNode createLinkedList(int n) {
-        ListNode head = new ListNode(1);//创建下标为1的头节点
-        ListNode next = head;//哨兵节点，如果不能理解可以到极客时间看王争的数据结构和算法之美
+        ListNode head = new ListNode(1);//创建下标为1的节点
+        ListNode next = head;
         for (int i = 2; i <= n; i++) {//可见这里的空间复杂度为O(n)
             ListNode tmp = new ListNode(i);
             next.next = tmp;
