@@ -37,7 +37,7 @@ public class DemonLanguageInterpretation {
     }
     public void translate() {
         if (!input()) return;
-        //括号匹配成功，执行以下代码2bnn
+        //括号匹配成功，执行以下代码
         String charB = "tsaedsae";
         String charA = "sae";
         Stack<Character> s = new Stack<>();//存放全部字符串
